@@ -53,8 +53,8 @@ crud/
 1. Clona el repositorio:
 
 ```bash
-git clone https://github.com/tuusuario/inventario-gruvbox.git
-cd inventario-gruvbox
+git clone https://github.com/luisnrz1995/crud.git
+cd crud
 ```
 
 2. Instala los módulos del backend:
