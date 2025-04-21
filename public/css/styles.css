@@ -1,0 +1,49 @@
+body {
+  font-family: "Fira Code", "Courier New", monospace;
+  background-color: #282828;
+  color: white;
+}
+
+form.active {
+  display: block;
+}
+
+form.d-none {
+  display: none;
+}
+
+#alerta {
+  font-weight: bold;
+}
+
+/* Colores de alerta */
+.alert.exito {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.alert.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* Estilo naranja sutil */
+.btn-naranja {
+  background-color: #e0a96d;
+  color: #282828;
+  font-weight: bold;
+  border: none;
+}
+
+.btn-naranja:hover {
+  background-color: #d18e52;
+  color: #ffffff;
+}
+
+.text-naranja {
+  color: #e0a96d;
+}
+
+.border-naranja {
+  border-color: #e0a96d !important;
+}

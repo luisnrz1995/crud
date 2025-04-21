@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sistema de Inventario | Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body class="bg-dark text-white font-monospace">
+
+  <div class="container d-flex flex-column align-items-center justify-content-center min-vh-100">
+    <div class="text-center mb-4">
+      <h1 class="text-warning fw-bold"># Sistema de Inventario</h1>
+    </div>
+
+    <div class="card bg-dark border-secondary w-100" style="max-width: 400px;">
+      <div class="card-header border-bottom border-secondary d-flex justify-content-between">
+        <button class="btn btn-sm btn-warning text-dark w-50 me-1" id="login-tab">Iniciar Sesión</button>
+        <button class="btn btn-sm btn-outline-warning w-50" id="register-tab">Registrarse</button>
+      </div>
+      <div class="card-body">
+
+        <!-- Alerta -->
+        <div id="alerta" class="alert d-none" role="alert"></div>
+
+        <!-- Formulario login -->
+        <form id="form-login">
+          <div class="mb-3">
+            <label for="correo-login" class="form-label">Correo:</label>
+            <input type="email" class="form-control bg-dark text-white border-secondary" id="correo-login" required>
+          </div>
+          <div class="mb-3">
+            <label for="clave-login" class="form-label">Contraseña:</label>
+            <input type="password" class="form-control bg-dark text-white border-secondary" id="clave-login" required>
+          </div>
+          <button type="submit" class="btn btn-warning w-100 fw-bold">Entrar</button>
+        </form>
+
+        <!-- Formulario registro -->
+        <form id="form-register" class="d-none">
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre:</label>
+            <input type="text" class="form-control bg-dark text-white border-secondary" id="nombre" required>
+          </div>
+          <div class="mb-3">
+            <label for="correo" class="form-label">Correo:</label>
+            <input type="email" class="form-control bg-dark text-white border-secondary" id="correo" required>
+          </div>
+          <div class="mb-3">
+            <label for="clave" class="form-label">Contraseña:</label>
+            <input type="password" class="form-control bg-dark text-white border-secondary" id="clave" required>
+          </div>
+          <button type="submit" class="btn btn-warning w-100 fw-bold">Registrarse</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
